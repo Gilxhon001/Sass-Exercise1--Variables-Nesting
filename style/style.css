@@ -1,0 +1,26 @@
+.exercise {
+  border: 1px solid #cc0000;
+  padding: 10px;
+}
+.exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline solid blue 1px;
+  text-underline-offset: 8px;
+}
+.exercise-contents {
+  display: flex;
+  flex-direction: row;
+}
+.exercise-contents_text {
+  border: 1px solid green;
+  width: 25%;
+  padding: 40px;
+  text-align: center;
+  color: blue;
+}
+.exercise-contents_text:nth-child(even) {
+  color: #ff3333;
+}
+
+/*# sourceMappingURL=style.css.map */

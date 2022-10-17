@@ -1,0 +1,33 @@
+@use "sass:color";
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+.exercise {
+border: 1px solid color.adjust($color-primary, $lightness: -10%);
+padding: 10px;
+
+    &-title {
+        color: $color-tertiary;
+        text-align: center;
+        text-decoration: underline solid $color-secondary 1px;
+        text-underline-offset: 8px;
+    }
+
+    &-contents {
+        display: flex;
+        flex-direction: row;
+
+        &_text {
+            border: 1px solid $color-tertiary;
+            width: 25%;
+            padding: 40px;
+            text-align: center;
+            color: $color-secondary;
+
+            &:nth-child(even) {
+                color: color.adjust($color-primary, $lightness: 10%);
+            }
+        }
+    }
+}
